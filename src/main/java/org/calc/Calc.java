@@ -19,4 +19,19 @@ public class Calc {
         }
         return Math.round(a / b);
     }
+
+    public double power(double a, double b) {
+        return Math.pow(a, b);
+    }
+
+    public double sqrt(double a) {
+        if (a < 0) {
+            throw new ArithmeticException("Корень из отрицательного числа недопустим.");
+        }
+        return Math.sqrt(a);
+    }
+
+    public double abs(double a) {
+        return Math.abs(a);
+    }
 }
